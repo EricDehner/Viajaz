@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.brand {
+    display: flex;
+}
+
+.logo_navbar {
+    margin-left: .5rem;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-brand {
+    font-family: 'Just Another Hand', cursive;
+}
+
+.nav-position {
+    justify-content: end !important;
+}
+
+.navbar {
+    background-color: #ff9900 !important;
+}
+
+.nav-link {
+    padding: 0 1rem !important;
+    transition: all .25s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 8px 5px rgba(0, 0, 0, 0.349));
+}
+
+.nav-link,
+.dropdown-item {
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-menu {
+    background-color: #ff9900 !important;
+    filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.241));
+}
+
+.webBase {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content auto max-content;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    background-image: url(../images/background/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(238, 238, 238);
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(92, 92, 92);
+    grid-area: footer;
+}
+
+.footer_icons {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5rem;
+}
+
+.footer_icons-icon {
+    color: white;
+    transition: all .25s ease-in-out;
+    font-size: 1.4rem;
+}
+
+
+.footer_icons-icon:hover {
+    color: white;
+    transform: translateY(-3px);
+    filter: drop-shadow(0 8px 5px rgba(0, 0, 0, 0.349));
+}
+
+.footer_copyright-text {
+    color: rgb(159, 159, 159);
+    font-size: .7rem;
+    margin-bottom: .5rem !important;
+}
+
+/* HIDDEN AND SHOW */
+.hidden {
+    display: none;
+}
+
+/* BTN */
+.btn {
+    background-color: white;
+    padding: 0 2rem;
+    transition: all .25s ease-in-out;
+    margin: 0 0 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.46);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    color: rgb(48, 48, 48);
+}
+
+.btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.46);
+    transform: translateY(-3px);
+    filter: drop-shadow(0 8px 5px rgba(0, 0, 0, 0.349));
+
+}
+
+/* CONTACTO */
+.contact_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.contact {
+    background-color: #ff99008e;
+    backdrop-filter: blur(1.6px);
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.275);
+    width: 70%;
+    height: max-content;
+    border-radius: 14px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "form stick data";
+}
+
+.form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.stick {
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(96, 96, 96, 0.389);
+    grid-area: stick;
+}
+
+
+.form_title {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    margin: 1rem 0 -.1rem;
+}
+
+.form_field {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_field-data {
+    width: 90%;
+    height: 2rem;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.46);
+}
+
+.form_field-text {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.46);
+    width: 90%;
+    height: 8rem;
+    resize: none;
+    padding: .5rem;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.data {
+    grid-area: data;
+    margin: auto;
+}
+
+.data_schedules {
+    width: 100%;
+}
+
+.data_schedules-title {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.data_schedules-text {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    width: 100%;
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+
+.data_social {
+    margin: auto;
+}
+
+.data_social-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+    text-align: center;
+}
+
+.data_social-text:hover {
+    color: white;
+    transform: translateY(-3px);
+    filter: drop-shadow(0 8px 5px rgba(0, 0, 0, 0.349));
+
+}
+
+.data_contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    gap: .5rem;
+}
+
+.data_contact-icon {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s ease-in-out;
+}
+
+.data_contact-icon:hover {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 8px 5px rgba(0, 0, 0, 0.349));
+    color: white;
+}
+
+.contact_icon {
+    padding-right: .5rem;
+    font-size: 1.6rem;
+}
+
+.contact_data {
+    font-size: 1.3rem;
+    margin-bottom: 4px !important;
+}
+
+.form_approved {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    width: 100%;
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+
+.offcanvas.show{
+    background-color: #ff9900;
+    width: 20%;
+}
+
+@media screen and (max-width: 1300px) {
+    .contact {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        width: 90%;
+    }
+
+    .footer_icons {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 991px){
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu{
+    border: 0px !important;
+    border-radius: 0 !important;
+    filter: drop-shadow(0 0 0);
+    margin: 0 !important;
+}
+
+.dropdown-item{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.051);
+}
+.dropdown-item:hover{
+    background-color: rgba(255, 255, 255, 0.051);
+}
+
+.dropdown-menu.show {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 795px) {
+    .footer_icons {
+        width: 35%;
+    }
+
+    .data_contact {
+        margin-bottom: 2rem;
+    }
+
+    .contact {
+        margin: 3rem auto;
+        width: 70%;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1px max-content;
+        gap: 0px 0px;
+        grid-template-areas:
+            "form"
+            "stick"
+            "data";
+    }
+
+    .data_schedules-title {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 1.3rem;
+        width: 100%;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .data {
+        grid-area: data;
+        margin: auto;
+        height: 100%;
+    }
+
+    .stick {
+        margin: auto;
+        width: 80%;
+        height: 100%;
+        background-color: rgba(96, 96, 96, 0.389);
+        grid-area: stick;
+    }
+
+    .data_social-text {
+        width: 80%;
+        margin: 0 auto 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contact {
+        width: 80%;
+    }
+
+    .footer_icons {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer_icons {
+        width: 55%;
+    }
+
+    .contact {
+        margin: 1.5rem auto;
+        width: 90%;
+    }
+
+    .form_title {
+        font-size: 1.1rem;
+    }
+
+    .data_schedules-title {
+        font-size: 1.1rem;
+    }
+
+    .data_schedules-text {
+        font-size: .9rem;
+    }
+
+    .data_social-text {
+        font-size: .9rem;
+    }
+
+    .contact_data {
+        font-size: 1.1rem;
+    }
+
+    .contact_icon {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+    }
+
+    .form_field {
+        font-size: .9rem;
+    }
+}
