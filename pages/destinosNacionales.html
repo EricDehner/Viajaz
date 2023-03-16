@@ -50,10 +50,16 @@
                                 NORTE ARGENTINO
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Excursiones desde Salta</a></li>
-                                <li><a class="dropdown-item" href="#">Aventura</a></li>
-                                <li><a class="dropdown-item" href="#">Viajes Especiales</a></li>
-                                <li><a class="dropdown-item" href="#">Alojamiento y Traslados</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../pages/norteArgentino.html#ExcursionesDesdeSalta">Excursiones desde
+                                        Salta</a></li>
+                                <li><a class="dropdown-item" href="../pages/norteArgentino.html#Aventura">Aventura</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../pages/norteArgentino.html#ViajesEspeciales">Viajes
+                                        Especiales</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../pages/norteArgentino.html#AlojamientoYTraslados">Alojamiento y
+                                        Traslados</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -72,7 +78,8 @@
     </header>
 
     <main class="main">
-        <div class="DN_container">
+        <div class="loader_container" id="loader"></div>
+        <div class="DN_container hide" id="content">
             <p aria-hidden="true" data-aos-duration="800" data-aos="zoom-in" class="DN_title">¡Conoce nuestros destinos!
                 INSPIRATE y contactanos para diseñarte ese viaje tan especial
                 que estás buscando vivir. </p>
@@ -95,7 +102,7 @@
                 </div>
                 <div class="card">
                     <div class="card_img">
-                        <img class="card_img-img" src="../images/pages/destinosNacionales/Bariloche.jpg" alt="BARILOCHE">
+                        <img class="card_img-img" src="..//images/pages/destinosNacionales/Bariloche.jpg" alt="BARILOCHE">
                     </div>
                     <h2 class="card_title">
                         BARILOCHE
@@ -127,7 +134,7 @@
                 </div>
                 <div class="card">
                     <div class="card_img">
-                        <img class="card_img-img" src="" alt="SAN JUAN">
+                        <img class="card_img-img" src="../images/pages/destinosNacionales/SanJuan.jpg" alt="SAN JUAN">
                     </div>
                     <h2 class="card_title">
                         SAN JUAN
@@ -151,7 +158,7 @@
                 </div>
                 <div class="card">
                     <div class="card_img">
-                        <img class="card_img-img" src="" alt="SALTA">
+                        <img class="card_img-img" src="../images/pages/destinosNacionales/Salta.jpg" alt="SALTA">
                     </div>
                     <h2 class="card_title">
                         SALTA
@@ -159,7 +166,7 @@
                 </div>
                 <div class="card">
                     <div class="card_img">
-                        <img class="card_img-img" src="" alt="TUCUMAN">
+                        <img class="card_img-img" src="../images/pages/destinosNacionales/Tucuman.jpg" alt="TUCUMAN">
                     </div>
                     <h2 class="card_title">
                         TUCUMAN
@@ -167,7 +174,7 @@
                 </div>
                 <div class="card">
                     <div class="card_img">
-                        <img class="card_img-img" src="" alt="ESTEROS DEL IBERÁ">
+                        <img class="card_img-img" src="../images/pages/destinosNacionales/EsterosDelIbera.jpg" alt="ESTEROS DEL IBERÁ">
                     </div>
                     <h2 class="card_title">
                         ESTEROS DEL IBERÁ
@@ -210,7 +217,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    <script type="module" src="../js/script.js"></script>
+    <script type="module" src="../js/loader.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
