@@ -486,13 +486,14 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .aboutUs_card-data--text {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-size: 1.1rem;
+    text-align: justify;
+    padding-top: 1rem;
 }
 
 .aboutUs_card-data--title {
@@ -526,6 +527,14 @@ p {
         "assistance_card-img assistance_card-data";
 }
 
+.assitance_card-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
 .assistance_card-img {
     grid-area: assistance_card-img;
     margin: auto;
@@ -556,6 +565,7 @@ p {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-size: 1.1rem;
+    text-align: justify;
 }
 
 .assistance_card-data--title {
@@ -1151,8 +1161,13 @@ p {
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
+    .assitance_card-container {
+        margin-bottom: 2rem;
+    }
+}
 
+@media screen and (max-width: 1300px) {
     .aboutUs_card-img--img {
         width: 25rem;
         height: 25rem;
@@ -1163,6 +1178,7 @@ p {
         height: 25rem;
     }
 
+    .index_container,
     .aboutUs,
     .NA_container,
     .assistance,
@@ -1251,6 +1267,10 @@ p {
 }
 
 @media screen and (max-width: 1122px) {
+    .assitance_card-container {
+        margin-bottom: 0;
+    }
+
     .aboutUs_card {
         display: grid;
         grid-template-columns: 1fr;
@@ -1322,6 +1342,7 @@ p {
 
 @media screen and (max-width: 1000px) {
 
+    .index_container,
     .aboutUs,
     .NA_container,
     .assistance,
@@ -1407,6 +1428,7 @@ p {
         margin-bottom: 2rem;
     }
 
+    .index_container,
     .aboutUs,
     .NA_container,
     .assistance,
@@ -1573,6 +1595,7 @@ p {
 
 @media screen and (max-width: 550px) {
 
+    .index_container,
     .aboutUs,
     .NA_container,
     .assistance,
@@ -1593,6 +1616,15 @@ p {
 }
 
 @media screen and (max-width: 425px) {
+
+    .card,
+    .left_card,
+    .right_card,
+    .right_card-NoDetails,
+    .left_card-NoDetails {
+        background-color: rgba(255, 255, 255, 0.808);
+    }
+
     .top {
         width: 3rem;
         height: 3rem;
@@ -1607,6 +1639,7 @@ p {
 
     .index_title {
         font-size: 3.2rem;
+        padding-bottom: 3rem;
     }
 
     .NA_button-long {
@@ -1623,13 +1656,18 @@ p {
         width: 55%;
     }
 
-    .aboutUs,
+    .index_container,
     .NA_container,
     .assistance,
     .DN_container,
     .contact {
         margin: 1.5rem auto;
         width: 90%;
+    }
+
+    .aboutUs {
+        margin: 0 auto;
+        padding: 1.5rem 0;
     }
 
     .form_title {
