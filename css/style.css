@@ -59,7 +59,6 @@ p {
     }
 }
 
-
 .nav-brand {
     font-family: 'Just Another Hand', cursive;
 }
@@ -123,8 +122,6 @@ p {
     grid-area: main;
     background-image: url(../images/background/background.png);
     background-repeat: repeat;
-    /*     background-size: cover;
- */
     background-color: rgb(238, 238, 238);
 }
 
@@ -149,8 +146,6 @@ p {
     transition: all .25s ease-in-out;
     font-size: 1.4rem;
 }
-
-
 
 .footer_icons-icon:hover {
     color: white;
@@ -196,7 +191,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .contact {
@@ -215,7 +209,6 @@ p {
     grid-auto-flow: row;
     grid-template-areas:
         "form stick data";
-
 }
 
 .form {
@@ -227,7 +220,6 @@ p {
     gap: 1rem;
 }
 
-
 .stick {
     margin: auto;
     width: 100%;
@@ -235,7 +227,6 @@ p {
     background-color: rgba(96, 96, 96, 0.389);
     grid-area: stick;
 }
-
 
 .form_title {
     width: 80%;
@@ -321,7 +312,6 @@ p {
     color: white;
     transform: translateY(-3px);
     filter: drop-shadow(0 8px 5px rgba(0, 0, 0, 0.349));
-
 }
 
 .data_contact {
@@ -383,7 +373,7 @@ p {
 .index_title {
     font-family: 'Just Another Hand', cursive;
     font-size: 4rem;
-    color: #d9d9d9;
+    color: #ebebeb;
     filter: drop-shadow(0 0 10px rgb(0, 0, 0));
     text-align: center;
 }
@@ -418,7 +408,7 @@ p {
     align-items: center;
     justify-content: center;
     box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.099);
-    background-color: rgba(255, 255, 255, 0.184);
+    background-color: rgba(255, 255, 255, 0.279);
     backdrop-filter: blur(1px);
     transition: all .25s ease-in-out;
 }
@@ -511,7 +501,6 @@ p {
     font-size: 1.7rem;
 }
 
-
 /* ASISTENCIA AL VIAJERO */
 
 .assistance {
@@ -591,7 +580,7 @@ p {
 
 /* NORTE ARGENTINO */
 
-.top{
+.top {
     position: fixed;
     bottom: 11%;
     right: 1.5rem;
@@ -603,13 +592,14 @@ p {
     transition: all .25s ease-in-out;
     filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.349));
 }
-.top:hover{
+
+.top:hover {
     transform: translateY(-3px);
     filter: drop-shadow(0 8px 5px rgba(0, 0, 0, 0.349));
-    
+
 }
 
-.arrow{
+.arrow {
     filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.132));
     height: 1.6rem;
     width: 1.6rem;
@@ -621,14 +611,11 @@ p {
     top: 18.5px;
 }
 
-
-
 .NA_container {
     width: 70%;
     height: 100%;
     margin: 2rem auto;
 }
-
 
 .NA_card_l {
     grid-area: content;
@@ -705,7 +692,7 @@ p {
     transition: all .25s ease-in-out;
     box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.099);
     margin: 2rem auto;
-    background-color: rgba(255, 255, 255, 0.184);
+    background-color: rgba(255, 255, 255, 0.279);
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: max-content 1fr;
@@ -723,7 +710,7 @@ p {
     transition: all .25s ease-in-out;
     box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.099);
     margin: 2rem auto;
-    background-color: rgba(255, 255, 255, 0.184);
+    background-color: rgba(255, 255, 255, 0.279);
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: max-content 1fr;
@@ -741,7 +728,7 @@ p {
     transition: all .25s ease-in-out;
     box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.099);
     margin: 2rem auto;
-    background-color: rgba(255, 255, 255, 0.184);
+    background-color: rgba(255, 255, 255, 0.279);
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr max-content;
@@ -759,7 +746,7 @@ p {
     transition: all .25s ease-in-out;
     box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.099);
     margin: 2rem auto;
-    background-color: rgba(255, 255, 255, 0.184);
+    background-color: rgba(255, 255, 255, 0.279);
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr max-content;
@@ -925,6 +912,7 @@ p {
 .NA_button-longXL--container---l {
     padding: 0 1rem 1rem 0rem;
 }
+
 .NA_button-longXL--container---r {
     padding: 0 0 1rem 1rem;
 }
@@ -1010,7 +998,6 @@ p {
 .hide {
     display: none;
 }
-
 
 .loader_container {
     width: 100%;
@@ -1122,7 +1109,6 @@ p {
     }
 }
 
-
 .btn_container {
     width: 100%;
     display: flex;
@@ -1149,7 +1135,6 @@ p {
     }
 
     .right_card {
-
         display: grid;
         grid-auto-columns: 1fr;
         grid-template-columns: 1fr max-content;
@@ -1185,13 +1170,9 @@ p {
     .contact {
         width: 80%;
     }
-
 }
 
 @media screen and (min-width: 1241px) {
-
-
-
     .show_btn {
         display: none;
     }
@@ -1207,7 +1188,6 @@ p {
     .hide_btn {
         display: none;
     }
-
 
     .NA_card_l-NoDetails {
         height: 100%;
@@ -1339,6 +1319,7 @@ p {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 1000px) {
 
     .aboutUs,
@@ -1360,6 +1341,7 @@ p {
         filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.241));
     }
 }
+
 @media screen and (max-width: 991px) {
     .nav-item {
         display: flex;
@@ -1521,7 +1503,6 @@ p {
         margin: 1rem 1rem 0 1rem;
     }
 
-
     .hide_btn {
         display: block;
         margin: auto;
@@ -1582,7 +1563,6 @@ p {
     }
 }
 
-
 @media screen and (max-width: 650px) {
     .horizontal_img {
         background-color: #acacac;
@@ -1613,12 +1593,12 @@ p {
 }
 
 @media screen and (max-width: 425px) {
-
-    .top{
+    .top {
         width: 3rem;
         height: 3rem;
     }
-    .arrow{
+
+    .arrow {
         height: 1.2rem;
         width: 1.2rem;
         left: 14.5px;
