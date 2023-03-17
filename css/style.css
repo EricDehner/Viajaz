@@ -127,15 +127,67 @@ p {
 
 .footer {
     width: 100%;
-    display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     background-color: rgb(92, 92, 92);
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr max-content;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "permiso footer_icons denuncia"
+        "footer_copyright footer_copyright footer_copyright";
 }
 
+.permiso {
+    position: relative;
+    top: .5rem;
+    grid-area: permiso;
+    display: flex;
+    justify-content: center;
+    color: rgb(192, 192, 192);
+    filter: drop-shadow(0 0 1px black);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.denuncia {
+    position: relative;
+    top: .5rem;
+    grid-area: denuncia;
+    display: flex;
+    justify-content: center;
+}
+
+.denuncia_btn {
+    color: rgb(192, 192, 192);
+    filter: drop-shadow(0 0 1px black);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.denuncia_btn:hover {
+    color: rgb(192, 192, 192);
+}
+
+.footer_copyright {
+    grid-area: footer_copyright;
+    display: flex;
+    justify-content: center;
+}
+
+
 .footer_icons {
-    width: 15%;
+    grid-area: footer_icons;
+    width: 50%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     margin-top: .5rem;
@@ -158,6 +210,8 @@ p {
     font-size: .7rem;
     margin-bottom: .5rem !important;
 }
+
+
 
 /* HIDDEN AND SHOW */
 .hidden {
@@ -486,6 +540,7 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .aboutUs_card-data--text {
@@ -500,6 +555,19 @@ p {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-size: 1.7rem;
+}
+
+.aboutUs_card-data--location{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding-top: 1rem;
+    transition: all .25s ease-in-out;
+}
+.aboutUs_card-data--location:hover{
+    color: #ffffff;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.249));
 }
 
 /* ASISTENCIA AL VIAJERO */
@@ -1341,6 +1409,9 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
+    .footer_icons {
+        width: 70%;
+    }
 
     .index_container,
     .aboutUs,
@@ -1351,19 +1422,22 @@ p {
         width: 90%;
     }
 
-    .footer_icons {
-        width: 25%;
-    }
 }
 
 @media screen and (max-width: 991px) {
+    .permiso {
+        font-size: .75rem;
+    }
+
+    .denuncia_btn {
+        font-size: .75rem;
+    }
+
     .dropdown-menu {
         background-color: #ff990000 !important;
         filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.241));
     }
-}
 
-@media screen and (max-width: 991px) {
     .nav-item {
         display: flex;
         flex-direction: column;
@@ -1418,10 +1492,6 @@ p {
 
     .assistance_card {
         margin: 3rem auto;
-    }
-
-    .footer_icons {
-        width: 35%;
     }
 
     .data_contact {
@@ -1585,6 +1655,13 @@ p {
     }
 }
 
+@media screen and (max-width: 696px) {
+    .footer_icons {
+        position: relative;
+        top: .3rem;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .horizontal_img {
         background-color: #acacac;
@@ -1605,7 +1682,7 @@ p {
     }
 
     .footer_icons {
-        width: 45%;
+        width: 70%;
     }
 
     .horizontal_img {
@@ -1616,6 +1693,35 @@ p {
 }
 
 @media screen and (max-width: 425px) {
+    .footer_icons {
+        position: relative;
+        top: 0rem;
+        width: 55%;
+    }
+
+    .permiso {
+        padding-bottom: .2rem;
+        font-size: .6rem;
+    }
+
+    .denuncia_btn {
+        padding-bottom: .5rem;
+        font-size: .6rem;
+    }
+
+    .footer {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr max-content max-content max-content;
+        gap: 0px 0px;
+        grid-template-areas:
+            "footer_icons"
+            "permiso"
+            "denuncia"
+            "footer_copyright"
+        ;
+    }
 
     .card,
     .left_card,
@@ -1652,9 +1758,7 @@ p {
         margin: 0rem auto;
     }
 
-    .footer_icons {
-        width: 55%;
-    }
+
 
     .index_container,
     .NA_container,
