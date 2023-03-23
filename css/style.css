@@ -328,6 +328,7 @@ p {
 
 .data_schedules {
     width: 100%;
+    margin: .5rem 0 0;
 }
 
 .data_schedules-title {
@@ -348,7 +349,7 @@ p {
 }
 
 .data_social {
-    margin: auto;
+    margin: 0 0 .5rem;
 }
 
 .data_social-text {
@@ -371,7 +372,6 @@ p {
 .data_contact {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
     gap: .5rem;
 }
 
@@ -1495,7 +1495,7 @@ p {
     }
 
     .data_contact {
-        margin-bottom: 2rem;
+        margin: 2rem 0;
     }
 
     .index_container,
@@ -1545,7 +1545,7 @@ p {
 
     .data_social-text {
         width: 80%;
-        margin: 0 auto 2rem;
+        margin: 0 auto 1rem;
     }
 
     .left_card {
@@ -1653,6 +1653,8 @@ p {
     .NA_button-longXL--container---l {
         padding: 0 1rem 1rem 1rem;
     }
+
+
 }
 
 @media screen and (max-width: 696px) {
