@@ -406,7 +406,7 @@ p {
     color: white;
     font-size: 1.1rem;
     width: 100%;
-    margin: 1rem 0 2rem;
+    padding-bottom: 1.4rem;
     text-align: center;
 }
 
@@ -1474,12 +1474,18 @@ p {
 }
 
 @media screen and (max-width: 795px) {
+
+    .form_approved {
+        padding-bottom:.9rem;
+    }
+
     .NA_title-section {
         font-size: 1.9rem;
     }
 
     .NA_title {
         font-size: 1.6rem;
+        padding-bottom: .5rem;
     }
 
     .NA_button-long--container---r {
@@ -1487,7 +1493,6 @@ p {
         display: flex;
         justify-content: center;
         margin-bottom: 1rem;
-        /* padding-left: 1rem; */
     }
 
     .assistance_card {
@@ -1695,6 +1700,10 @@ p {
 }
 
 @media screen and (max-width: 425px) {
+    .DN_title {
+        margin: 0rem 2rem 1.5rem !important;
+    }
+
     .footer_icons {
         position: relative;
         top: 0rem;
@@ -1759,8 +1768,6 @@ p {
     .assistance_card {
         margin: 0rem auto;
     }
-
-
 
     .index_container,
     .NA_container,
