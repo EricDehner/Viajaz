@@ -145,9 +145,10 @@ p {
 
 .permiso {
     position: relative;
-    top: .5rem;
+    top: .7rem;
     grid-area: permiso;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     color: rgb(192, 192, 192);
     filter: drop-shadow(0 0 1px black);
@@ -158,10 +159,11 @@ p {
 
 .denuncia {
     position: relative;
-    top: .5rem;
+    top: .7rem;
     grid-area: denuncia;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .denuncia_btn {
@@ -183,14 +185,12 @@ p {
     justify-content: center;
 }
 
-
 .footer_icons {
     grid-area: footer_icons;
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-around;
-    margin-top: .5rem;
 }
 
 .footer_icons-icon {
@@ -557,7 +557,7 @@ p {
     font-size: 1.7rem;
 }
 
-.aboutUs_card-data--location{
+.aboutUs_card-data--location {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-size: 1.1rem;
@@ -565,7 +565,8 @@ p {
     padding-top: 1rem;
     transition: all .25s ease-in-out;
 }
-.aboutUs_card-data--location:hover{
+
+.aboutUs_card-data--location:hover {
     color: #ffffff;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.249));
 }
@@ -1254,6 +1255,25 @@ p {
     .contact {
         width: 80%;
     }
+
+    .footer {
+        grid-template-columns: 1fr max-content 1fr;
+    }
+
+    .footer_icons {
+        grid-area: footer_icons;
+        width: 200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer_icons {
+        height: 100%;
+        width: 200px;
+        align-items: center;
+
+    }
 }
 
 @media screen and (min-width: 1241px) {
@@ -1406,12 +1426,17 @@ p {
     .NA_button-long--xl {
         width: 100%;
     }
+
+    .permiso {
+        font-size: .75rem;
+    }
+
+    .denuncia_btn {
+        font-size: .75rem;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-    .footer_icons {
-        width: 70%;
-    }
 
     .index_container,
     .aboutUs,
@@ -1425,13 +1450,6 @@ p {
 }
 
 @media screen and (max-width: 991px) {
-    .permiso {
-        font-size: .75rem;
-    }
-
-    .denuncia_btn {
-        font-size: .75rem;
-    }
 
     .dropdown-menu {
         background-color: #ff990000 !important;
@@ -1476,7 +1494,7 @@ p {
 @media screen and (max-width: 795px) {
 
     .form_approved {
-        padding-bottom:.9rem;
+        padding-bottom: .9rem;
     }
 
     .NA_title-section {
@@ -1663,9 +1681,33 @@ p {
 }
 
 @media screen and (max-width: 696px) {
+
+    .footer {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr max-content max-content max-content;
+        gap: 0px 0px;
+        grid-template-areas:
+            "footer_icons"
+            "permiso"
+            "denuncia"
+            "footer_copyright"
+        ;
+    }
+
     .footer_icons {
         position: relative;
         top: .3rem;
+    }
+
+    .footer_icons {
+        width: 70%;
+        padding-top: .5rem;
+    }
+
+    .denuncia {
+padding-bottom: 1rem;
     }
 }
 
@@ -1686,10 +1728,6 @@ p {
     .DN_container,
     .contact {
         width: 80%;
-    }
-
-    .footer_icons {
-        width: 70%;
     }
 
     .horizontal_img {
@@ -1716,22 +1754,7 @@ p {
     }
 
     .denuncia_btn {
-        padding-bottom: .5rem;
         font-size: .6rem;
-    }
-
-    .footer {
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr max-content max-content max-content;
-        gap: 0px 0px;
-        grid-template-areas:
-            "footer_icons"
-            "permiso"
-            "denuncia"
-            "footer_copyright"
-        ;
     }
 
     .card,
